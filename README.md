@@ -1,14 +1,19 @@
-# 🌲 Forest Fire Prediction Web App
+# 🌲 Forest Fire Prediction Web Application
 
 ## 📌 Overview
 
-This project predicts the burned area of forest fires using Machine Learning and a Flask web application.
+This project is a Machine Learning-based web application that predicts the **Fire Weather Index (FWI)**, which indicates the potential severity of forest fires. The system helps estimate fire risk based on environmental and weather conditions.
+
+## 🎯 Objective
+
+To develop an intelligent system that analyzes weather parameters and predicts forest fire risk, helping in early prevention and decision-making.
 
 ## 🚀 Features
 
-* Predict forest fire severity
-* User-friendly web interface
-* Real-time predictions
+* Predicts Fire Weather Index (FWI) using ML model
+* User-friendly web interface built with Flask
+* Real-time prediction based on user input
+* Displays fire risk level (Low / Medium / High)
 
 ## 📊 Input Features
 
@@ -16,9 +21,9 @@ This project predicts the burned area of forest fires using Machine Learning and
 * Relative Humidity (RH)
 * Wind Speed (Ws)
 * Rain
-* FFMC
-* DMC
-* ISI
+* FFMC (Fine Fuel Moisture Code)
+* DMC (Duff Moisture Code)
+* ISI (Initial Spread Index)
 * Classes
 * Region
 
@@ -27,20 +32,34 @@ This project predicts the burned area of forest fires using Machine Learning and
 * Python
 * Flask
 * Scikit-learn
-* Pandas, NumPy
+* Pandas
+* NumPy
 
-## 🧠 Model
+## 🧠 Machine Learning Model
 
-* Ridge Regression
-* StandardScaler used for preprocessing
+* **Ridge Regression** algorithm used for prediction
+* Data preprocessing performed using **StandardScaler**
+* Model trained and evaluated using train-test split
 
-## ▶️ Run Locally
+## 🖥️ System Workflow
+
+1. User inputs environmental parameters
+2. Data is preprocessed using trained scaler
+3. Model predicts Fire Weather Index
+4. Result is displayed with risk level
+
+## ▶️ How to Run Locally
 
 ```bash
 pip install -r requirements.txt
 python application.py
 ```
 
-## 📌 Author
+## 📌 Future Enhancements
 
-Satyam Pawar
+* Integration with real-time weather APIs
+* Advanced models (Random Forest, XGBoost)
+* Deployment on cloud platforms
+* Mobile-friendly UI
+
+
